@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="./labTestStyle.css">
+</head>
+
+<body>
+    <div class="hidden-container">
+        <div class="main-container">
+            <div class="form-container">
+                <form>
+                    <section>
+                        <h3>1. Your Contact Details</h3>
+
+                        <div class="input-pair">
+                            <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+                            <input type="text" id="id" name="id" placeholder="Patient Id if exists">
+                        </div>
+
+                        <div class="input-pair">
+                            <input type="tel" id="phone" name="phone" placeholder="Contact Number" required>
+                            <input type="email" id="email" name="email" placeholder="Email id">
+                        </div>
+
+                        <h3>2. Address</h3>
+                        <div class="input-pair">
+                            <input type="text" id="h-no" name="h-no" placeholder="H-no">
+                            <input type="text" id="street" name="street" placeholder="Street">
+                        </div>
+
+                        <div class="input-pair">
+                            <input type="text" id="area" name="area" placeholder="Area" required>
+                        </div>
+
+                        <div class="input-pair">
+                            <label for="district"><b>District</b></label>
+                        </div>
+
+                        <div class="select-box">
+                            <select id="district" name="district" required>
+                                <option value="" disabled selected>Choose</option>
+                                <option value="Del">Delhi</option>
+                                <option value="Mumb">Mumbai</option>
+                                <option value="Pun">Pune</option>
+                                <option value="Hyd">Hyderabad</option>
+                                <option value="Ind">Indore</option>
+                                <option value="Kol">Kolkata</option>
+                                <option value="Ban">Bangalore</option>
+                                <option value="Ahm">Ahmedabad</option>
+                                <option value="Jaip">Jaipur</option>
+                                <option value="Luc">Lucknow</option>
+                            </select>
+                        </div>
+
+                        <h3>3. Choose the Test Type</h3>
+                        <p>(Check at least one box without fail)</p>
+                        <input type="checkbox" id="cbc" name="tests" value="CBC">
+                        <label for="cbc">CBC</label><br>
+
+                        <input type="checkbox" id="urine" name="tests" value="Complete Urine">
+                        <label for="urine">Complete Urine</label><br>
+
+                        <input type="checkbox" id="lipid" name="tests" value="Lipid Profile">
+                        <label for="lipid">Lipid Profile</label><br>
+
+                        <input type="checkbox" id="tsh" name="tests" value="Thyroid Stimulating Hormone(TSH)">
+                        <label for="tsh">Thyroid Stimulating Hormone(TSH)</label><br>
+
+                        <input type="checkbox" id="glucose" name="tests" value="Glucose Test">
+                        <label for="glucose">Glucose Test</label>
+
+                        <h3>4. Do You Want a Hard Copy of the Report also?</h3>
+                        <input type="radio" name="copy" value="yes" required />Yes<br />
+                        <input type="radio" name="copy" value="no" />No
+
+                        <h3>5. Select Your Comfortable Date and Time</h3>
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                        <br><br>
+
+                        
+                    </section>
+                </form>
+            </div>
+            <div class="image-container">
+                <img src="./Images/Lab-Test/lab-test.jpg" alt="lab test" id="fixed-image">
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </div>
+</body>
+
+</html>
